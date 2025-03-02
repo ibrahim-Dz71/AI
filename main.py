@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 # Configure Gemini API
 genai.configure(api_key=os.environ.get('GEMINI_API_KEY'))
-model = genai.GenerativeModel('gemini-2.0-flash-thinking-exp-01-21')
+model = genai.GenerativeModel('gemini-2.0-pro-exp-02-05')
 
 def format_prompt(question):
     return textwrap.dedent(f"""
