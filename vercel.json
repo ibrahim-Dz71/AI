@@ -3,6 +3,11 @@
     "builds": [
         {"src": "main.py", "use": "@vercel/python"}
     ],
+    "functions": {
+    "path/to/dir/**/*": {
+      "maxDuration": 40 // All functions can run for a maximum of 5 seconds
+    }
+  }
     "routes": [
         {"src": "/(.*)", "dest": "main.py"}
     ]
